@@ -6,8 +6,8 @@ private:
     int num;
 
 public:
-    Foo(int num) : num(num) {} // initializer : equal to constructor assign to private variable
-    friend int operator+(Foo &f1, Foo &f2);
+    Foo(int num) : num(num) {}              // initializer : equal to constructor assign to private variable
+    friend int operator+(Foo &f1, Foo &f2); // using friend operator to overload operator and access private method
 };
 
 int operator+(Foo &f1, Foo &f2)
