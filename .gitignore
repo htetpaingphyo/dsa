@@ -1,3 +1,7 @@
+# Optional
+main
+test/
+
 # Prerequisites
 *.d
 
