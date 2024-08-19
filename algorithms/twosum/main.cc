@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> twoNums(std::vector<int> arr, int num)
+std::vector<int> twoSum(std::vector<int> &nums, int target)
 {
     std::vector<int> indices;
 
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 0; i < nums.size(); i++)
     {
         for (int j = 0; j < i; j++)
         {
-            if (arr[j] + arr[i] == num)
+            if (nums[j] + nums[i] == target)
             {
                 indices.push_back(j);
                 indices.push_back(i);
@@ -24,7 +24,7 @@ int main()
 {
     std::vector<int> arr = {1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29}, indices;
     int num = 24;
-    indices = twoNums(arr, num);
+    indices = twoSum(arr, num);
 
     if (indices.empty())
         printf("no index found!");
