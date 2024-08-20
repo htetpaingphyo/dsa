@@ -3,8 +3,8 @@
 
 void countApplesAndOranges(int s, int t, int a, int b, std::vector<int> apples, std::vector<int> oranges)
 {
-    /*  ------x----#--x--x---/|||\---x----#---xx-------     */
-    /*  assume that x are fruits # are trees and /|||\ is house     */
+    /*  ------x----#--x--x---/|||\---x----#---xx-------  */
+    /*  assume that x are fruits # are trees and /|||\ is house  */
 
     int acount = 0, ocount = 0;
 
