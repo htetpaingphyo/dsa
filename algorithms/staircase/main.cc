@@ -8,7 +8,7 @@ void staircase(int n)
         for (int j = n; j > i + 1; j--)
             std::cout << " ";
         for (int k = 0; k < i + 1; k++)
-            std::cout << "#";
+            std::cout << hash;
         std::cout << std::endl;
     }
 }
