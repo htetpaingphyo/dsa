@@ -13,12 +13,12 @@ std::vector<int> breakingRecords(std::vector<int> scores)
         if (i > highestScore)
         {
             highestScore = i;
-            max++;
+            ++max;
         }
         if (i < lowwestScore)
         {
             lowwestScore = i;
-            min++;
+            ++min;
         }
     }
 

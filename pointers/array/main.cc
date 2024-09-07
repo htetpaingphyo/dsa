@@ -14,13 +14,13 @@ int main()
     iPtr = iArr; // assigning arry to pointer
 
     // inserting random value through pointer to array
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; ++i)
     {
         *(iPtr + i) = rand() % size;
     }
 
     // getting result of array
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; ++i)
     {
         printf("iArr[%d] is %d\n", i, iArr[i]);
     }

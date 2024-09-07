@@ -7,7 +7,7 @@ int diagonalDifference(std::vector<std::vector<int>> arr)
     int firstDiagonal = 0;
     int secondDiagonal = 0;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; ++i)
     {
         firstDiagonal += arr[i][i];             // algorithm for first diagonal
         secondDiagonal += arr[i][size - 1 - i]; // algorithm for second diagonal

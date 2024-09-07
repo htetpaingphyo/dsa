@@ -6,7 +6,7 @@ int birthdayCakeCandles(std::vector<int> candles)
     int max = -1;
     int count = 0;
 
-    for (int i = 0; i < candles.size(); i++)
+    for (int i = 0; i < candles.size(); ++i)
     {
         if (candles[i] > max)
             max = candles[i];
@@ -15,7 +15,7 @@ int birthdayCakeCandles(std::vector<int> candles)
     for (int i : candles)
     {
         if (i == max)
-            count++;
+            ++count;
     }
 
     return count;

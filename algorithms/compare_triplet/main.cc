@@ -7,14 +7,14 @@ std::vector<int> compareTriplets(std::vector<int> a, std::vector<int> b)
     int alicePoint = 0;
     int bobPoint = 0;
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; ++i)
     {
         if (a[i] != 100 && b[i] != 100)
         {
             if (a[i] > b[i])
-                alicePoint++;
+                ++alicePoint;
             else if (b[i] > a[i])
-                bobPoint++;
+                ++bobPoint;
             else
                 continue;
         }

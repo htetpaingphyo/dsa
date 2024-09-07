@@ -5,9 +5,9 @@ std::vector<int> twoSum(std::vector<int> &nums, int target)
 {
     std::vector<int> indices;
 
-    for (int i = 0; i < nums.size(); i++)
+    for (int i = 0; i < nums.size(); ++i)
     {
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < i; ++j)
         {
             if (nums[j] + nums[i] == target)
             {
@@ -29,7 +29,7 @@ int main()
     if (indices.empty())
         printf("no index found!");
 
-    for (int i = 0; i < indices.size(); i++)
+    for (int i = 0; i < indices.size(); ++i)
     {
         if (i > 0)
             printf(", ");

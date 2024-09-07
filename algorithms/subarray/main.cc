@@ -8,18 +8,18 @@ int subArrayDivision(std::vector<int> s, int d, int m)
     if (m > s.size())
         return 0;
 
-    for (int i = 0; i <= s.size() - m; i++)
+    for (int i = 0; i <= s.size() - m; ++i)
     {
         int sum = 0;
 
-        for (int j = 0; j < m; j++)
+        for (int j = 0; j < m; ++j)
         {
             sum += s[i + j];
         }
 
         if (sum == d)
         {
-            count++;
+            ++count;
         }
     }
 
