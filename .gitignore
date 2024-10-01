@@ -1,6 +1,7 @@
 # Optional
 main
 test/
+.vscode/
 
 # Prerequisites
 *.d
