@@ -6,28 +6,15 @@ int main()
     printf("enter number for pattern: ");
     scanf("%d", &num);
 
-    for (int i = 0; i < num; ++i)
+    for (int i = 0; i < 2 * num - 1; ++i)
     {
-        printf("*");
+        int spaces = i < num ? i : 2 * num - 2 - i;
 
-        for (int j = 0; j < i; j++)
+        printf("*");
+        for (int j = 0; j < spaces; ++j)
         {
             printf(" ");
         }
-
-        printf("*");
-        printf("\n");
-    }
-
-    for (int i = num - 1; i >= 0; --i)
-    {
-        printf("*");
-
-        for (int j = 0; j < i; j++)
-        {
-            printf(" ");
-        }
-
         printf("*");
         printf("\n");
     }
